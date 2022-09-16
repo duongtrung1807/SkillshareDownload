@@ -72,8 +72,8 @@ class Skillshare(object):
                 video_id = s['video_hashed_id'].split(':')[1]
             elif 'video_thumbnail_url' in s and s['video_thumbnail_url']:
                 video_id = s['video_thumbnail_url'].split('/')[6]
-            elif 'image_thumbnail' in s and s['video_thumbnail_url']:
-                video_id = s['video_thumbnail_url'].split('/')[6]
+            elif 'image_thumbnail' in s and s['image_thumbnail']:
+                video_id = s['image_thumbnail'].split('/')[6]
 
             if not video_id:
                 raise Exception('Failed to read video ID from data')
