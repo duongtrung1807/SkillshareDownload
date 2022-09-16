@@ -86,7 +86,7 @@ class Skillshare(object):
                 slugify(s_title),
             )
             
-            print('{base_path}/{session}.mp4')
+            print({base_path}/{session}.mp4)
             print(video_id)
             
             self.download_video(
