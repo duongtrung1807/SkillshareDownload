@@ -66,6 +66,8 @@ class Skillshare(object):
         for s in data['_embedded']['sessions']['_embedded']['sessions']:
             video_id = None
             
+            print(s)
+            
             if 'video_hashed_id' in s and s['video_hashed_id']:
                 video_id = s['video_hashed_id'].split(':')[1]
             elif 'video_thumbnail_url' in s and s['video_thumbnail_url']:
