@@ -88,10 +88,6 @@ class Skillshare(object):
                 slugify(s_title),
             )
             
-            print('********')
-            print(video_id)
-            print('********')
-            
             self.download_video(
                 fpath='{base_path}/{session}.mp4'.format(
                     base_path=base_path,
